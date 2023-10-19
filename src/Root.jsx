@@ -1,3 +1,4 @@
+import styles from "./style";
 import { Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -5,10 +6,25 @@ import Footer from "./components/Footer";
 
 const Root = () => {
     return (
-        <div>
+        <div className="bg-primary w-full overflow-hidden">
+           <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+            <div className={`${styles.boxWidth}`}>
             <Navbar></Navbar>
+
+
+            </div>
+
+           </div>
+
+           <div className={`bg-primary ${styles.flexStart}`}>
+            <div className={`${styles.boxWidth}`}>
             <Outlet></Outlet>
             <Footer></Footer>
+            </div>
+           </div>
+            
+            
+            
 
         </div>
     );
