@@ -20,27 +20,27 @@ export const navLinks = [
 ];
 
 export const features = [
-  {
-    id: "feature-1",
-    icon: star,
-    title: "Rewards",
-    content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
-  },
-  {
-    id: "feature-2",
-    icon: shield,
-    title: "100% Secured",
-    content:
-      "We take proactive steps make sure your information and transactions are secure.",
-  },
-  {
-    id: "feature-3",
-    icon: send,
-    title: "Balance Transfer",
-    content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
-  },
+  
+    {
+      id: "feature-1",
+      icon: star,
+      title: "Quality Selection",
+      content: "Discover a diverse range of premium cars, carefully curated for your satisfaction. Our collection ensures you find the perfect ride."
+    },
+    {
+      id: "feature-2",
+      icon: shield,
+      title: "Hassle-Free Process",
+      content: "We've streamlined the car-buying journey. From financing to paperwork, our expert team ensures a seamless and stress-free experience."
+    },
+    {
+      id: "feature-3",
+      icon: send,
+      title: "Savings and Trade-Ins",
+      content: "Explore money-saving options. Trade in your old vehicle and explore financing plans designed to cut down costs."
+    },
+  
+  
 ];
 
 export const feedback = [
