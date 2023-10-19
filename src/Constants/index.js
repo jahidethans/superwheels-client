@@ -3,14 +3,17 @@ import { people01, people02, people03, facebook, instagram, linkedin, twitter, a
 export const navLinks = [
   {
     id: "home",
+    to: "/",
     title: "Home",
   },
   {
     id: "add_product",
+    to: "/addProduct",
     title: "Add Product",
   },
   {
     id: "my_cart",
+    to: "/myCart",
     title: "My Cart",
   },
   

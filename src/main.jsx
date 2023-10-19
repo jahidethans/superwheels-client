@@ -9,6 +9,8 @@ import Root from './Root.jsx';
 
 import Home from './Pages/Home.jsx';
 import ErrorPage from './Pages/ErrorPage';
+import AddProducts from './Pages/AddProducts';
+import MyCart from './components/MyCart';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +22,15 @@ const router = createBrowserRouter([
         path:"/",
         element: <Home></Home>
     },
+    {
+      path:'/addProduct',
+      element: <AddProducts></AddProducts>
+    },
+    {
+      path:'/myCart',
+      element: <MyCart></MyCart>
+    }
+    
   
   ]
   },
