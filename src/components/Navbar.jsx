@@ -40,7 +40,7 @@ const Navbar = () => {
                         key={nav.id}
                         className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length-1 ? 'mr-0' : 'mb-10'} text-white`}
                         >
-                            <NavLink to={`#${nav.id}`}>
+                            <NavLink to={`run devnn${nav.to}`}>
                                 {nav.title}
                             </NavLink>
 

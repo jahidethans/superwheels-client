@@ -16,8 +16,8 @@ const Root = () => {
 
            </div>
 
-           <div className={`bg-primary ${styles.flexStart}`}>
-            <div className={`${styles.boxWidth}`}>
+           <div className={`bg-primary ${styles.flexStart} container mx-auto`}>
+            <div className={`${styles.boxWidth} `}>
             <Outlet></Outlet>
             <Footer></Footer>
             </div>
