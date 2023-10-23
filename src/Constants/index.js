@@ -8,7 +8,7 @@ export const navLinks = [
   },
   {
     id: "add_product",
-    to: "/addProduct",
+    to: "/addproduct",
     title: "Add Product",
   },
   {
@@ -16,6 +16,12 @@ export const navLinks = [
     to: "/myCart",
     title: "My Cart",
   },
+  {
+    id: "login",
+    to: "/login",
+    title: "Log In",
+  },
+  
   
 ];
 

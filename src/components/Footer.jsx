@@ -6,7 +6,7 @@ const Footer = () => {
             <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
                 <div className='flex-1 flex flex-col justify-start mr-10'>
                 <h2 className='w-[266px] h-[72px] font-poppins font-bold text-white text-2xl' style={{ whiteSpace: 'nowrap' }}>
-                    <span >Super</span> <span className='text-sky-400'>Wheels</span>
+                    <span >Super</span> <span className='text-secondary'>Wheels</span>
                 </h2>
                 <p className={`${styles.paragraph} mt-4 max-w-[310px]`}>
                 At superwheels, we're committed to delivering excellence in the world of car sales.Your dream car is just a click away.
@@ -16,7 +16,7 @@ const Footer = () => {
                 <div className='flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10'>
                     {
                         footerLinks.map((footerLink)=>(
-                            <div key={footerLink.id} className='flex flex-col ss:my-0 my-4 min-w-[150px]'>
+                            <div key={footerLink.title} className='flex flex-col ss:my-0 my-4 min-w-[150px]'>
                                 <h4 className='font-poppins font-medium text-[20px] leading-[27px] text-white'>
                                     {footerLink.title}
                                 </h4>
