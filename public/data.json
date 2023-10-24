@@ -2,6 +2,7 @@
   {
     "id": 1,
     "title": "BMW",
+    "brandName":"BMW",
     "logo": "https://i.ibb.co/Dp0BWY4/bmwLogo.jpg",
     "bannerOne": "https://i.ibb.co/wwQC55y/bmwBOne.jpg",
     "bannerTwo": "https://i.ibb.co/ZJDHN8d/bmw-BThree.jpg",
@@ -10,6 +11,7 @@
   {
     "id": 2,
     "title": "Chevrolet",
+    "brandName":"Chevrolet",
     "logo": "https://i.ibb.co/Tw8WG4q/chevrolet-Logo.jpg",
     "bannerOne": "https://i.ibb.co/F4fsGjF/chevrolet-BOne.jpg",
     "bannerTwo": "https://i.ibb.co/V9FyfPg/chevrolet-BThree.jpg",
@@ -18,6 +20,7 @@
   {
     "id": 3,
     "title": "Honda",
+    "brandName": "Honda",
     "logo": "https://i.ibb.co/rGpgWK2/hondalogo.png",
     "bannerOne": "https://i.ibb.co/qWNr58Z/honda-BOne.jpg",
     "bannerTwo": "https://i.ibb.co/V99f0v8/honda-BThree.jpg",
@@ -26,6 +29,7 @@
   {
     "id": 4,
     "title": "Mercedes",
+    "brandName": "Mercedes",
     "logo": "https://i.ibb.co/7VLH4Wz/marcedes-Logo.jpg",
     "bannerOne": "https://i.ibb.co/gSgXBP5/mercedes-BOne.jpg",
     "bannerTwo": "https://i.ibb.co/n08n6KL/mercedes-BThree.jpg",
@@ -34,6 +38,7 @@
   {
     "id": 5,
     "title": "Nissan",
+    "brandName": "Nissan",
     "logo": "https://i.ibb.co/tL9DPD2/nissanlog.jpg",
     "bannerOne": "https://i.ibb.co/yhbwdGK/nissan-BOne.jpg",
     "bannerTwo": "https://i.ibb.co/NWRZzWF/nissan-BThree.jpg",
@@ -42,6 +47,7 @@
   {
     "id": 6,
     "title": "Tesla",
+    "brandName": "Tesla",
     "logo": "https://i.ibb.co/TPRH0x1/tesla-Logo.jpg",
     "bannerOne": "https://i.ibb.co/1KzycGp/tesla-BOne.jpg",
     "bannerTwo": "https://i.ibb.co/6rp474y/tesla-BThree.jpg",

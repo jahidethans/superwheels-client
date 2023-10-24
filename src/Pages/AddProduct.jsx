@@ -1,3 +1,4 @@
+import toast from "react-hot-toast";
 
 
 const AddProduct = () => {
@@ -28,6 +29,9 @@ const AddProduct = () => {
         .then(res=>res.json())
         .then(data=>{
             console.log(data);
+            if(data.insertedId){
+              toast.success('Car added successfully')
+            }
         })
     } 
 
@@ -60,12 +64,12 @@ const AddProduct = () => {
         className="py-2 px-2 rounded-md w-full focus:outline-none focus:ring focus:border-secondary focus:bg-white mb-4"
         required
       >
-        <option value="a">Nissan</option>
-        <option value="b">Honda</option>
-        <option value="c">BMW</option>
-        <option value="d">Mercedes</option>
-        <option value="e">Tesla</option>
-        <option value="f">Chevrolet</option>
+        <option value="Nissan">Nissan</option>
+        <option value="Honda">Honda</option>
+        <option value="BMW">BMW</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="Tesla">Tesla</option>
+        <option value="Chevrolet">Chevrolet</option>
       </select> <br />
       <p className="text-white font-medium mb-1">Type</p>
       <input
