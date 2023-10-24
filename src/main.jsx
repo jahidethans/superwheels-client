@@ -15,6 +15,7 @@ import Login from './Pages/Login';
 import Register from './Pages/Register';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import AddProduct from './Pages/AddProduct';
+import Cars from './Pages/Cars';
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,11 @@ const router = createBrowserRouter([
       path: '/register',
       element: <Register></Register>
     },
+    {
+      path:'/cars/:id',
+      element:<Cars></Cars>,
+      loader: ()=>fetch('/data.json')
+    }
     
   
   ]
