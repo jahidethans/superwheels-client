@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "title": "BMW",
+      "logo": "https://i.ibb.co/Dp0BWY4/bmwLogo.jpg",
+      "banner": [
+        "https://i.ibb.co/wwQC55y/bmwBOne.jpg",
+        "https://i.ibb.co/ZJDHN8d/bmw-BThree.jpg",
+        "https://i.ibb.co/NVh3K5L/bmwBTwo.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Chevrolet",
+      "logo": "https://i.ibb.co/Tw8WG4q/chevrolet-Logo.jpg",
+      "banner": [
+        "https://i.ibb.co/F4fsGjF/chevrolet-BOne.jpg",
+        "https://i.ibb.co/V9FyfPg/chevrolet-BThree.jpg",
+        "https://i.ibb.co/8b9bsNP/chevrolet-BTwo.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Honda",
+      "logo": "https://i.ibb.co/rGpgWK2/hondalogo.png",
+      "banner": [
+        "https://i.ibb.co/qWNr58Z/honda-BOne.jpg",
+        "https://i.ibb.co/V99f0v8/honda-BThree.jpg",
+        "https://i.ibb.co/8XK4Rj2/honda-BTwo.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Mercedes",
+      "logo": "https://i.ibb.co/7VLH4Wz/marcedes-Logo.jpg",
+      "banner": [
+        "https://i.ibb.co/gSgXBP5/mercedes-BOne.jpg",
+        "https://i.ibb.co/n08n6KL/mercedes-BThree.jpg",
+        "https://i.ibb.co/Sr8Grnn/mercedes-BTwo.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Nissan",
+      "logo": "https://i.ibb.co/tL9DPD2/nissanlog.jpg",
+      "banner": [
+        "https://i.ibb.co/yhbwdGK/nissan-BOne.jpg",
+        "https://i.ibb.co/NWRZzWF/nissan-BThree.jpg",
+        "https://i.ibb.co/tL9DPD2/nissan-BTwo.jpg"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Tesla",
+      "logo": "https://i.ibb.co/TPRH0x1/tesla-Logo.jpg",
+      "banner": [
+        "https://i.ibb.co/1KzycGp/tesla-BOne.jpg",
+        "https://i.ibb.co/6rp474y/tesla-BThree.jpg",
+        "https://i.ibb.co/YZ33gBV/tesla-BTwo.jpg"
+      ]
+    }
+  ]
+  
