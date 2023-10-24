@@ -9,12 +9,12 @@ import Root from './Root.jsx';
 
 import Home from './Pages/Home.jsx';
 import ErrorPage from './Pages/ErrorPage';
-import AddProducts from './Pages/AddProducts';
 import MyCart from './components/MyCart';
 import AuthProvider from './Provider/AuthProvider';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
+import AddProduct from './Pages/AddProduct';
 
 const router = createBrowserRouter([
   {
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
     },
     {
       path:'/addProduct',
-      element: <PrivateRoute><AddProducts></AddProducts></PrivateRoute>
+      element: <PrivateRoute><AddProduct></AddProduct></PrivateRoute>
     },
     {
       path:'/myCart',
@@ -38,10 +38,7 @@ const router = createBrowserRouter([
       path: '/login',
       element: <Login></Login>
     },
-    {
-      path: '/addproduct',
-      element: <AddProducts></AddProducts>
-    },
+    
     {
       path: '/register',
       element: <Register></Register>

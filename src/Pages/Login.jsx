@@ -9,7 +9,8 @@ const Login = () => {
 
   const { loginUser } = useAuth();
   const navigate = useNavigate();
-  const location = useLocation()
+  const location = useLocation();
+  console.log(`login page`,location);
 
   const handleSignIn = (event)=>{
      event.preventDefault();

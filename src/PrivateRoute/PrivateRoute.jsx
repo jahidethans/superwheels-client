@@ -8,13 +8,10 @@ const PrivateRoute = ({ children }) => {
   const location = useLocation()
   console.log(location);
 
- if(loading){
-    return <div className="flex items-center justify-center h-screen">
-        <div className="loading loading-infinity text-secondary w-[8rem]"></div>
-      </div>}
+ 
  
 
-  if (!user) {
+  if (!user?.email) {
     return <Navigate state={location.pathname} to='/login'></Navigate>;
   }
 
