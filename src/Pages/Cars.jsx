@@ -50,6 +50,8 @@ const Cars = () => {
   </div> 
 </div>
 
+ 
+
     <div> <CarBrands brand={brand}></CarBrands> </div>
 
                   
