@@ -4,26 +4,33 @@ import { Link } from "react-router-dom";
 const CarBrands = ({ brand }) => {
   const [cars, setCars] = useState([]);
   const [car, setCar] = useState([]);
+  const [isLoading, setIsLoading] = useState(false)
 
   useEffect(() => {
+    setIsLoading(true)
     fetch('http://localhost:5000/cars')
       .then((res) => res.json())
       .then((data) => {
         setCars(data);
         const findCar = data.filter((c) => c.brandName === brand.brandName);
         setCar(findCar);
+        setIsLoading(false)
       })
       .catch((error) => console.error("Error fetching data:", error));
   }, [brand]);
   console.log(car._id);
 
-  if (!brand) {
+  if (isLoading) {
     return <div className="font-poppins text-center text-4xl font-semibold mt-5 text-white">Loading...</div>;
+  }
+
+  if(car.length === 0){
+    return <div className="font-poppins text-center text-4xl font-semibold mt-5 text-white">no cars available...</div>;
   }
 
   return (
     <div>
-      {car.length > 0 ? (
+      
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {car.map((eachCar) => (
             <div key={eachCar._id} className="card card-compact w-72 sm:w-[370px] bg-base-100 shadow-xl rounded-md container mx-auto">
@@ -46,9 +53,7 @@ const CarBrands = ({ brand }) => {
             </div>
           ))}
         </div>
-      ) : (
-        <div className="font-poppins text-center text-4xl font-semibold mt-5 text-white">Loading data... </div>
-      )}
+     
     </div>
   );
 };
