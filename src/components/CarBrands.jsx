@@ -45,7 +45,7 @@ const CarBrands = ({ brand }) => {
                 <div className="flex justify-between mt-3">
                 <h2 className="card-title text-secondary">{eachCar.rating}/<sub className="text-white">5</sub> </h2>
                 <div className="card-actions justify-end">
-                  <button className="btn bg-secondary text-black font-semibold">Detail</button>
+                  <Link to={`/cardetail/${eachCar._id}`} className="btn bg-secondary text-black font-semibold">Detail</Link >
                   <Link to={`/updatecar/${eachCar._id}`} className="btn bg-secondary text-black font-semibold">Update</Link>
                 </div>
                 </div>

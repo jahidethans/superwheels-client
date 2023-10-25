@@ -52,7 +52,7 @@ const AuthProvider = ({children}) => {
         });
     },[]);
   
-    console.log(loading);
+    
 
 
 
