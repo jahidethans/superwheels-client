@@ -16,6 +16,8 @@ import Register from './Pages/Register';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import AddProduct from './Pages/AddProduct';
 import Cars from './Pages/Cars';
+import UpdateCar from './Pages/UpdateCar';
+import CarDetail from './Pages/CarDetail';
 
 const router = createBrowserRouter([
   {
@@ -48,6 +50,15 @@ const router = createBrowserRouter([
       path:'/cars/:id',
       element:<Cars></Cars>,
       loader: ()=>fetch('/data.json')
+    },
+    {
+      path:'/updatecar/:id',
+      element: <UpdateCar></UpdateCar>,
+      loader: ({params})=>fetch(`http://localhost:5000/cars/${params.id}`)
+    },
+    {
+      path: '/cardetail',
+      element: <CarDetail></CarDetail>
     }
     
   

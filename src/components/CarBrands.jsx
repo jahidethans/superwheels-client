@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const CarBrands = ({ brand }) => {
   const [cars, setCars] = useState([]);
@@ -14,6 +15,11 @@ const CarBrands = ({ brand }) => {
       })
       .catch((error) => console.error("Error fetching data:", error));
   }, [brand]);
+  console.log(car._id);
+
+  if (!brand) {
+    return <div className="font-poppins text-center text-4xl font-semibold mt-5 text-white">Loading...</div>;
+  }
 
   return (
     <div>
@@ -29,16 +35,19 @@ const CarBrands = ({ brand }) => {
                   <li>{eachCar.price} <span>$</span></li>
                   <li className="">{eachCar.type}</li>
                 </div>
+                <div className="flex justify-between mt-3">
+                <h2 className="card-title text-secondary">{eachCar.rating}/<sub className="text-white">5</sub> </h2>
                 <div className="card-actions justify-end">
                   <button className="btn bg-secondary text-black font-semibold">Detail</button>
-                  <button className="btn bg-secondary text-black font-semibold">Update</button>
+                  <Link to={`/updatecar/${eachCar._id}`} className="btn bg-secondary text-black font-semibold">Update</Link>
+                </div>
                 </div>
               </div>
             </div>
           ))}
         </div>
       ) : (
-        <div className="font-poppins text-center text-4xl font-semibold mt-5 text-white">No data here... </div>
+        <div className="font-poppins text-center text-4xl font-semibold mt-5 text-white">Loading data... </div>
       )}
     </div>
   );
