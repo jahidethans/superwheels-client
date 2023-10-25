@@ -25,7 +25,7 @@ const Login = () => {
        toast.error("Password must be atleast one special character, capital letter and 6 characters.")
        return;
    }
-   console.log(location);
+  
 
   //  sign in
   setIsloading(true);
