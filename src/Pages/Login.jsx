@@ -2,9 +2,11 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import SocialLogin from "../components/SocialLogin";
 import useAuth from "../Hooks/useAuth";
 import toast from "react-hot-toast";
+import { useState } from "react";
 
 
 const Login = () => {
+  const [isloading, setIsloading] = useState(false);
 
 
   const { loginUser } = useAuth();
@@ -23,14 +25,17 @@ const Login = () => {
        toast.error("Password must be atleast one special character, capital letter and 6 characters.")
        return;
    }
+   console.log(location);
 
   //  sign in
+  setIsloading(true);
   loginUser(email, password)
-  .then(res=>{toast.success('User created successfully');
+  .then(res=>{toast.success('Logged in successfully');
   navigate(location?.state ? location.state : '/')})
   .catch(error=>{
     toast.error(error.message)
   })
+  setIsloading(false);
 
 
   }
